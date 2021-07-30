@@ -23,6 +23,7 @@ class Solution:
         
         if target == nums[min_index]:
             return min_index
+        
         m = len(nums)
         start = min_index if (target <= nums[m-1]) else 0
         end = min_index if (target > nums[m-1]) else m-1
